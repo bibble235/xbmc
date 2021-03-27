@@ -91,11 +91,12 @@
 						<visible>Player.TempoEnabled</visible>
 					</control>
 
-                                        <control type="button" id="11109">
-                                                <width>700</width>
-                                                <include>DialogSettingButton</include>
-                                                <label>$LOCALIZE[24186]</label>
-                                                <onclick>ActivateWindow(playersettingsosd)</onclick>
+					<control type="button" id="11109">
+                    	<width>700</width>
+                        <include>DialogSettingButton</include>
+                        <label>$LOCALIZE[24186]</label>
+                        <onclick>ActivateWindow(playersettingsosd)</onclick>
+						<visible>System.Platform.Android</visible>
 					</control>
 
 				</control>

@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include "AndroidUtils.h"
+#include "WinSystemAndroid.h"
 #include "rendering/gles/RenderSystemGLES.h"
 #include "system_egl.h"
 #include "threads/CriticalSection.h"

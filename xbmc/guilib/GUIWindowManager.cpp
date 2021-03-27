@@ -171,7 +171,6 @@ void CGUIWindowManager::Initialize()
 
 void CGUIWindowManager::CreateWindows()
 {
-  CLog::Log(LOGINFO, std::string(std::string("IWW Adding my Window now: ") + __FUNCTION__).c_str());
   Add(new CGUIWindowHome);
   Add(new CGUIWindowPrograms);
   Add(new CGUIWindowPictures);
@@ -210,7 +209,6 @@ void CGUIWindowManager::CreateWindows()
 #if defined(HAS_GL) || defined(HAS_DX)
   Add(new CGUIDialogCMSSettings);
 #endif
-  CLog::Log(LOGINFO, std::string(std::string("IWW We are rocking: ") + __FUNCTION__).c_str());
   Add(new CGUIDialogPlayerSettingsOSD);
   Add(new CGUIDialogVideoSettings);
   Add(new CGUIDialogAudioSettings);
