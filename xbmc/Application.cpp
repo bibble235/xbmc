@@ -1066,6 +1066,14 @@ void CApplication::OnSettingChanged(const std::shared_ptr<const CSetting>& setti
     if (CServiceBroker::GetWinSystem()->GetGfxContext().IsFullScreenRoot())
       CServiceBroker::GetWinSystem()->GetGfxContext().SetVideoResolution(CServiceBroker::GetWinSystem()->GetGfxContext().GetVideoResolution(), true);
   }
+  else if (settingId == CSettings::SETTING_VIDEOPLAYER_USEMEDIACODECSURFACE)
+  {
+    CApplicationMessenger::GetInstance().PostMsg(TMSG_MEDIA_RESTART);
+  }
+  else if (settingId == CSettings::SETTING_VIDEOPLAYER_USEMEDIACODEC)
+  {
+    CApplicationMessenger::GetInstance().PostMsg(TMSG_MEDIA_RESTART);
+  }
   else if (settingId == CSettings::SETTING_AUDIOOUTPUT_PASSTHROUGH)
   {
     CApplicationMessenger::GetInstance().PostMsg(TMSG_MEDIA_RESTART);
