@@ -40,7 +40,8 @@
 
 CGUIDialogCMSSettings::CGUIDialogCMSSettings()
     : CGUIDialogSettingsManualBase(WINDOW_DIALOG_CMS_OSD_SETTINGS, "DialogSettings.xml")
-{ }
+{ 
+}
 
 CGUIDialogCMSSettings::~CGUIDialogCMSSettings() = default;
 

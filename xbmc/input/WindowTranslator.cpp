@@ -87,6 +87,7 @@ const CWindowTranslator::WindowMapByName CWindowTranslator::WindowMappingByName 
     {"addonsettings", WINDOW_DIALOG_ADDON_SETTINGS},
     {"visualisationpresetlist", WINDOW_DIALOG_VIS_PRESET_LIST},
     {"osdcmssettings", WINDOW_DIALOG_CMS_OSD_SETTINGS},
+    {"playersettingsosd", WINDOW_DIALOG_PLAYER_OSD_SETTINGS},
     {"osdvideosettings", WINDOW_DIALOG_VIDEO_OSD_SETTINGS},
     {"osdaudiosettings", WINDOW_DIALOG_AUDIO_OSD_SETTINGS},
     {"osdsubtitlesettings", WINDOW_DIALOG_SUBTITLE_OSD_SETTINGS},

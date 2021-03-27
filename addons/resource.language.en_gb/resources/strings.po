@@ -15636,8 +15636,13 @@ msgid "Subtitle settings"
 msgstr ""
 
 #: xbmc/dialogs/GUIDialogSubtitles.cpp
-msgctxt "#24134"
+msgctxt "#24185"
 msgid "Download subtitle..."
+msgstr ""
+
+#: xbmc/dialogs/GUIPlayerSettingsOSD.cpp
+msgctxt "#24186"
+msgid "Player settings"
 msgstr ""
 
 #: xbmc/interfaces/builtins/AddonBuiltins.cpp

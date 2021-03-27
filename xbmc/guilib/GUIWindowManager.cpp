@@ -101,6 +101,7 @@
 #include "video/dialogs/GUIDialogSubtitleSettings.h"
 #include "video/dialogs/GUIDialogVideoBookmarks.h"
 #include "video/dialogs/GUIDialogVideoSettings.h"
+#include "video/dialogs/GUIDialogPlayerSettingsOSD.h"
 
 /* PVR related include Files */
 #include "pvr/PVRManager.h"
@@ -170,6 +171,7 @@ void CGUIWindowManager::Initialize()
 
 void CGUIWindowManager::CreateWindows()
 {
+  CLog::Log(LOGINFO, std::string(std::string("IWW Adding my Window now: ") + __FUNCTION__).c_str());
   Add(new CGUIWindowHome);
   Add(new CGUIWindowPrograms);
   Add(new CGUIWindowPictures);
@@ -208,6 +210,8 @@ void CGUIWindowManager::CreateWindows()
 #if defined(HAS_GL) || defined(HAS_DX)
   Add(new CGUIDialogCMSSettings);
 #endif
+  CLog::Log(LOGINFO, std::string(std::string("IWW We are rocking: ") + __FUNCTION__).c_str());
+  Add(new CGUIDialogPlayerSettingsOSD);
   Add(new CGUIDialogVideoSettings);
   Add(new CGUIDialogAudioSettings);
   Add(new CGUIDialogSubtitleSettings);
@@ -335,6 +339,7 @@ bool CGUIWindowManager::DestroyWindows()
     DestroyWindow(WINDOW_DIALOG_NETWORK_SETUP);
     DestroyWindow(WINDOW_DIALOG_MEDIA_SOURCE);
     DestroyWindow(WINDOW_DIALOG_CMS_OSD_SETTINGS);
+    DestroyWindow(WINDOW_DIALOG_PLAYER_OSD_SETTINGS);
     DestroyWindow(WINDOW_DIALOG_VIDEO_OSD_SETTINGS);
     DestroyWindow(WINDOW_DIALOG_AUDIO_OSD_SETTINGS);
     DestroyWindow(WINDOW_DIALOG_SUBTITLE_OSD_SETTINGS);

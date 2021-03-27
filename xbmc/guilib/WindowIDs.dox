@@ -75,6 +75,7 @@ This page shows the window names, the window definition, the window ID and the s
 | SubtitleSearch          | WINDOW_DIALOG_SUBTITLES              | 10153     | DialogSubtitles.xml                 |
 |                         | WINDOW_DIALOG_KEYBOARD_TOUCH         | 10156     |                                     |
 | OSDCMSSettings          | WINDOW_DIALOG_CMS_OSD_SETTINGS       | 10157     | DialogSettings.xml                  |
+| PlayerSettingsOSD       | WINDOW_DIALOG_PLAYER_OSD_SETTINGS    | 10161     | DialogSettings.xml                  |
 | InfoproviderSettings    | WINDOW_DIALOG_INFOPROVIDER_SETTINGS  | 10158     | DialogSettings.xml                  |
 | OSDSubtitleSettings     | WINDOW_DIALOG_SUBTITLE_OSD_SETTINGS  | 10159     | DialogSettings.xml                  |
 | BusyDialogNoCancel      | WINDOW_DIALOG_BUSY_NOCANCEL          | 10160     | DialogBusy.xml                      |
